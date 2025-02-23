@@ -1,0 +1,199 @@
+@import "tailwindcss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+  #headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 10px 20px;
+    background-color: #e6e6e6;
+}
+
+#kidduLogo {
+    height: 240px;
+}
+
+#shoppingCart {
+    position: absolute;
+    right: 40px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+#shoppingCart:hover {
+    transform: scale(1.1);
+}
+
+.bodyOneContainer{
+  position: relative;
+  height: 100vh;
+}
+
+.bodyOneContainer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("bodyOneBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(50%);
+  z-index: -1;
+}
+
+.h1{
+  color: #e6e6e6;
+  font-size: 150px;
+    font-family: "Chonburi", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding-top: 30vh;
+  }
+
+  .p{
+    color: #e6e6e6;
+    font-size: 45px;
+      font-family: "Antic Didone", serif;
+      font-weight: 400;
+      font-style: normal;
+      text-align: center;
+  }
+
+#buttonMenu{
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 1000;
+}
+  
+.button{
+    outline: 0;
+    cursor: pointer;
+    border: 1.5px solid #000;
+    border-radius: 3px;
+    color: #000;
+    background: #e9d758;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    padding: 12px 20px;
+    text-align:center;
+    transition-duration: .15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    min-width: 210px;
+}
+
+.button:hover{
+    color: #ff8552;
+    background: #297373;
+}
+
+#landingButton{
+    display: inline-block;
+    outline: 0;
+    cursor: pointer;
+    border: 1.5px solid #000;
+    border-radius: 3px;
+    color: #000;
+    background: #e9d758;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    padding: 12px 20px;
+    text-align:center;
+    transition-duration: .15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    min-width: 210px;
+}
+
+#landingButton:hover{
+    color: #fff;
+    background: #333;
+}
+
+.book {
+  position: relative;
+  border-radius: 10px;
+  width: 220px;
+  height: 300px;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 1px 1px 12px #000;
+  box-shadow: 1px 1px 12px #000;
+  -webkit-transform: preserve-3d;
+  -ms-transform: preserve-3d;
+  transform: preserve-3d;
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #000;
+}
+
+.cover {
+  top: 0;
+  position: absolute;
+background-image:url("/cardImgOne.jpg") ;
+background-size: cover;
+width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: 0;
+  -ms-transform-origin: 0;
+  transform-origin: 0;
+  -webkit-box-shadow: 1px 1px 12px #000;
+  box-shadow: 1px 1px 12px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.book:hover .cover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: rotatey(-80deg);
+  -ms-transform: rotatey(-80deg);
+  transform: rotatey(-80deg);
+}
+
+#promoName {
+  font-size: 20px;
+  font-weight: bolder;
+  position: fixed;
+  bottom: 20px;
+}
