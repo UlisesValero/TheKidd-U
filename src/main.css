@@ -12,7 +12,6 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    padding: 10px 20px;
     background-color: #e6e6e6;
 }
 
@@ -34,12 +33,12 @@
     transform: scale(1.1);
 }
 
-.bodyOneContainer{
+.bodyOne{
   position: relative;
   height: 100vh;
 }
 
-.bodyOneContainer::before {
+.bodyOne::before {
   content: '';
   position: absolute;
   top: 0;
@@ -132,6 +131,46 @@
     background: #333;
 }
 
+.bodyTwo{
+  display: flex;
+  justify-content: center;
+}
+
+.menuContainer{
+  background-image: url("kiddu-logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 850px;
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menuText{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.menuImg{
+  width: 30%;
+  padding-left: 50px;
+  max-height: 15rem;
+}
+
+.menuItem{
+  display: flex;
+  justify-content: space-around;
+  max-height: 170px;
+  position: relative;
+}
+
+.menuItem-0{background-color:rgba(230, 230, 230, 0.585);}
+.menuItem-1{background-color: rgba(255, 134, 82, 0.65)}
+.menuItem-2{background-color: rgba(41, 115, 115, 0.65)}
+
 .book {
   position: relative;
   border-radius: 10px;
@@ -197,3 +236,5 @@ width: 100%;
   position: fixed;
   bottom: 20px;
 }
+
+

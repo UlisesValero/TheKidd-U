@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./header";
 import Bodyone from "./bodyOne";
+import BodyTwo from "./BodyTwo";
 // import Promocard from "./Promocard"
 // import ShoppingCart from "./shoppingcart";
 
@@ -12,6 +13,7 @@ function App() {
         <Header/>
         <Bodyone/>
         {/* <Promocard/> */}
+        <BodyTwo/>
     </React.Fragment>
   );
 }

@@ -1,12 +1,11 @@
 import React from "react"
 import"./main.css"
-import { BiColor } from "react-icons/bi"
 
 
 function Bodyone() {
     return (
         <React.Fragment>
-        <section className="bodyOneContainer">
+        <section className="bodyOne">
         <nav id="buttonMenu">
         <button id="landingButton">Inicio</button>
         <button className="button">Menú</button>
